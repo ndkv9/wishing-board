@@ -56,12 +56,14 @@
 ```sh
 git clone https://github.com/ndkv101/wishing-board.git
 ```
-2. Install NPM packages
+2. Install NPM packages in the back-end folder
 ```sh
 npm install
 ```
-
-
+3. Implement application on local server
+```sh
+npm run dev
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
