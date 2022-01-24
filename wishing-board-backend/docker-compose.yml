@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  wishing-board:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 5000:3001
+    container_name: wishing-board
+    command: [ "npm", "start" ]
+    volumes:
+      - ./:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+
+volumes:
+  node_modules:
